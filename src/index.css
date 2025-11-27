@@ -1,0 +1,103 @@
+
+* { 
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box; }
+body { 
+  font-family: 'Segoe UI', sans-serif; 
+  background-image: url('https://cdn.wallpapersafari.com/22/99/1BOs2i.jpg');
+  color: #e0e0e0; 
+  min-height: 100vh;
+}
+
+.nav {
+  background: rgba(0,0,0,0.8);
+  padding: 1.5rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  position: sticky; top: 0; z-index: 100;
+}
+.nav a {
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-shadow: 0 0 20px #00ffff;
+}
+
+.container { 
+  padding: 3rem 1rem; 
+  max-width: 1200px; 
+  margin: 0 auto; }
+
+h1 {
+  text-align:center; 
+  margin-bottom:0.5rem; 
+  font-size:2.8rem; 
+  background:#0091c9
+}
+
+.subtitle { text-align:center; 
+  color:#000000; 
+  margin-bottom:3rem; 
+  font-style:italic;
+ }
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(0,255,255,0.2);
+}
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0,255,255,0.2);
+}
+.preview {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.card-title {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.back:hover { text-decoration: underline; }
+
+.detail-card {
+  background: rgba(255,255,255,0.05);
+  padding: 3rem;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid rgba(0,255,255,0.3);
+}
+.full-meme {
+  max-width: 100%;
+  border-radius: 20px;
+  margin: 2rem 0;
+  box-shadow: 0 15px 35px rgba(0,255,255,0.2);
+}
+.description {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #000000;
+  max-width: 700px;
+  margin: 0 auto;
+}
