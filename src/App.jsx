@@ -1,18 +1,20 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
 import Detail from './pages/Detail.jsx'
 
 export default function App() {
   return (
-    <>
-      <nav className="nav">
-        <Link to="/">Мемотека 2025</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/meme/:id" element={<Detail />} />
-      </Routes>
-    </>
+    <div className="app-wrapper">
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/meme/:id" element={<Detail />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   )
 }
