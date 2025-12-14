@@ -7,7 +7,7 @@ export default function Header() {
         <Link to="/" className="logo">Мемотека 2025</Link>
         <nav className="nav-links">
           <Link to="/">Главная</Link>
-          <Link to="/about">О проекте</Link> {/* Добавим потом, если хочешь */}
+          <Link to="/baskets">Корзина </Link> 
         </nav>
       </div>
     </header>
